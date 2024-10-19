@@ -1,0 +1,3 @@
+const CONFIG = {
+    API_KEY: 'ADD YOUR OMDB API KEY HERE'
+};

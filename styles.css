@@ -1,0 +1,137 @@
+body {
+    width: 300px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+#deleteButton {
+    background-color: #f44336;
+}
+
+#deleteButton:hover {
+    background-color: #d32f2f;
+}
+
+#clearButton {
+    background-color: #ff9800;
+}
+
+#clearButton:hover {
+    background-color: #fb8c00;
+}
+
+#movieList {
+    margin-top: 15px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#movieList li {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+#movieList li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#result {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#rating {
+    font-size: 14px;
+    color: #666;
+}

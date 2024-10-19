@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating Extension</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="popup-content">
+        <h1>Movie Rating Extension</h1>
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="enableExtension">
+                <span class="slider round"></span>
+            </label>
+            <span>Enable Extension</span>
+        </div>
+        <div id="result">
+            <h2 id="title"></h2>
+            <p id="rating"></p>
+        </div>
+        <div class="button-container">
+            <button id="addButton" disabled>Add to List</button>
+            <button id="deleteButton">Delete Selected</button>
+            <button id="clearButton">Clear List</button>
+        </div>
+        <ul id="movieList"></ul>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
